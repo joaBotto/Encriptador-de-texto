@@ -1,24 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="javascript" href="funciones.js" />
     <title>Encriptador de texto</title>
+    <style>
+      /* Estilos iniciales */
+      #resultadoEncriptado {
+        font-size: 16px;
+        color: black;
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+    </style>
   </head>
   <body>
-    <script src="funciones.js"></script>
-    <h3>Encriptador de texto de JB</h3>
-    <div class="container">
-      <div class="texto">
-        <textarea></textarea>
+    <header>
+      <img src="image.png" alt="Alura LATAM" />
+      <h4 class="title-header">Encrypter Text</h4>
+    </header>
+    <main>
+      <div class="container">
+        <div class="titulo">
+          <h1>Joaquin Encrypter Text</h1>
+        </div>
+
+        <div class="titulo__areaTexto">
+          <textarea
+            id="textoEntrada"
+            placeholder="Ingrese el texto aquí..."
+            rows="5"
+            cols="40"
+          ></textarea
+          ><br />
+          <button id="encriptarBtn">Encriptar</button>
+          <button id="desencriptarBtn">Desencriptar</button>
+        </div>
+
+        <div class="titulo__resultado">
+          <h2>Resultado:</h2>
+          <p id="resultadoEncriptado"></p>
+        </div>
+
+        <script src="funciones.js"></script>
       </div>
-      <div class="botones">
-        <button>Encriptar</button>
-        <button>Desencriptar</button>
-      </div>
-      <div class="texto-resultado"></div>
-    </div>
+    </main>
+    <footer class="footer">
+      <p>Joaquin Botto - Alura LATAM - Copyright 2024</p>
+    </footer>
   </body>
 </html>

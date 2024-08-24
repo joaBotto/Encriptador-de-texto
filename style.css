@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #ced4da;
+}
+/* Estilos generales */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f8ff;
+  color: #002e5b;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+header img {
+  height: 40px;
+  margin-right: 15px;
+}
+
+.title-header {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+/* Texto y botones */
+.titulo__areaTexto {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #002e5b;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 2px solid #002e5b;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+button {
+  padding: 15px 25px;
+  margin-right: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#encriptarBtn {
+  background-color: #002e5b;
+  color: #ffffff;
+}
+
+#desencriptarBtn {
+  background-color: #ffffff;
+  color: #002e5b;
+  border: 2px solid #002e5b;
+}
+
+/* Sección de resultado */
+.titulo__resultado {
+  width: 35%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.titulo__resultado h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#resultadoEncriptado {
+  font-size: 18px;
+  color: #333333;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #777777;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titulo__areaTexto,
+  .titulo__resultado {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  textarea {
+    height: 150px;
+  }
+}
