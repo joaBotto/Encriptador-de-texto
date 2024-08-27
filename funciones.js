@@ -18,14 +18,14 @@ function desencriptar(texto) {
     .replace(/ufat/g, "u");
 }
 
-// "Encriptar"
+// "Encriptacion"
 document.getElementById("encriptarBtn").addEventListener("click", function () {
   let textoOriginal = document.getElementById("textoEntrada").value;
   let textoEncriptado = encriptar(textoOriginal);
   mostrarResultado(textoEncriptado);
 });
 
-// "Desencriptar"
+// "Desencriptacion"
 document
   .getElementById("desencriptarBtn")
   .addEventListener("click", function () {
@@ -34,7 +34,7 @@ document
     mostrarResultado(textoDesencriptado);
   });
 
-// Función para mostrar el resultado en pantalla y aplicar estilos
+// Función para mostrar el resultado en pantalla y aplicar estilos, hecho con propiedad .style :)
 function mostrarResultado(texto) {
   let resultadoElement = document.getElementById("resultadoEncriptado");
   resultadoElement.textContent = texto;
